@@ -3,4 +3,6 @@ websockets-demo
 
 WebSockets demo project for ISM APAC TeckTalks
 
-testing github
+How to run the demo:
+
+node app.js

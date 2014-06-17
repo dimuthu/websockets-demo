@@ -15,6 +15,7 @@
 
     <!-- Custom styles for this template -->
     <link href="/stylesheets/jumbotron-narrow.css" rel="stylesheet">
+    <link href="/stylesheets/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -32,11 +33,16 @@
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-        <h3 class="text-muted">Project name</h3>
+        <h3 class="text-muted">Websockets Demo</h3>
       </div>
-
+      <div class="row marketing">
+        <select id="instance_type">
+          <option value="tracker">Tracker</option>
+          <option value="monitor">Monitor</option>
+        </select>
+      </div>
       <div class="jumbotron">
-        <h1>Jumbotron heading</h1>
+        <h1>Websockets Demo</h1>
         <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
         <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
       </div>
@@ -66,11 +72,13 @@
       </div>
 
       <div class="footer">
-        <p>&copy; Company 2014</p>
+        <p>&copy; 2014</p>
       </div>
 
     </div> <!-- /container -->
+    <div id="pointer"></div>
     <script src="/javascripts/jquery-1.11.1.min.js"></script>
+    <script src="/javascripts/underscore-min.js"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="/javascripts/tracker.js"></script>
   </body>
